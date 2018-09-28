@@ -1,95 +1,91 @@
-// //1.sum total function
-// alert('1. Sum total function exercise up coming');
-// let firstNumber = prompt('Please enter FIRST number');
-// let secondNumber = prompt('Please enter SECOND number');
-// let thirdNumber = prompt('Please enter THIRD number');
-// function sumNumbers(first, second, third) {
-//   let total = first + second + third;
-//   return (total);
+//1.sum total function
+alert('1. Sum total function exercise up coming');
+let firstNumber = prompt('Please enter FIRST number');
+let secondNumber = prompt('Please enter SECOND number'); let thirdNumber = prompt('Please enter THIRD number');
+function sumNumbers(first, second, third) {
+   let total = first + second + third;
+   return (total);
 
-// }
-// alert('the sum of your numbers = ' + sumNumbers(parseInt(firstNumber), parseInt(secondNumber), parseInt(thirdNumber)));
-// console.log('the sum of your numbers = ' + sumNumbers(parseInt(firstNumber), parseInt(secondNumber), parseInt(thirdNumber)));
+ }
+ alert('the sum of your numbers = ' + sumNumbers(parseInt(firstNumber), parseInt(secondNumber), parseInt(thirdNumber)));
+ console.log('the sum of your numbers = ' + sumNumbers(parseInt(firstNumber), parseInt(secondNumber), parseInt(thirdNumber)));
+//2.String concatenating function (car color)
+ alert('2. Car color function exercise up coming');
+ let myFavoriteColor = prompt("what car color are you looking for?");
+ function colorCar(color) {
 
-// //2.String concatenating function (car color)
-// alert('2. Car color function exercise up coming');
-// let myFavoriteColor = prompt("what car color are you looking for?");
-// function colorCar(color) {
+   return (myFavoriteColor);
+ }
+ alert('we found you a ' + colorCar(myFavoriteColor) + ' car');
+ console.log('we found you a ' + colorCar(myFavoriteColor) + ' car');
 
-//   return (myFavoriteColor);
-// }
+//3 object output using function
 
-// alert('we found you a ' + colorCar(myFavoriteColor) + ' car');
-// console.log('we found you a ' + colorCar(myFavoriteColor) + ' car');
+ const table = {
+  material: ' wooden ',
+  color: ' brown ',
+  height: ' 60 Cm ',
+   price: ' 30 $'
 
-// //3 object output using function
+ }
+ function displayObject(myObject) {
+  return (myObject);
+ }
+console.log(displayObject('my Objects properties and values are:\n ' + Object.entries(table)));
+ //4. vehicle Type and color function (using prompts)
+ alert('4. Vehicle Type and color function exercise up coming');
+ let promptType = prompt("what vehicle type are you looking for? FOR A CAR ENTER (1), FOR A MOTORBIKE ENTER(2)");
+ let promptColor = prompt("what vehicle color are you looking for?");
+function vehicleType4(type, color) {
 
-// const table = {
-//   material: ' wooden ',
-//   color: ' brown ',
-//   height: ' 60 Cm ',
-//   price: ' 30 $'
+  if (type == 1) { type = 'car'; }
+  else { type = 'motorbike'; }
 
-// }
-// function displayObject(myObject) {
-//   return (myObject);
-// }
-// console.log(displayObject('my Objects properties and values are:\n ' + Object.entries(table)));
+   let choice = color + " " + type;
+   return (choice)
 
-// //4. vehicle Type and color function (using prompts)
-// alert('4. Vehicle Type and color function exercise up coming');
-// let promptType = prompt("what vehicle type are you looking for? FOR A CAR ENTER (1), FOR A MOTORBIKE ENTER(2)");
-// let promptColor = prompt("what vehicle color are you looking for?");
-// function vehicleType4(type, color) {
-
-//   if (type == 1) { type = 'car'; }
-//   else { type = 'motorbike'; }
-
-//   let choice = color + " " + type;
-//   return (choice)
-
-// }
-// console.log("your choice is a " + vehicleType4(promptType, promptColor));
+ }
+ console.log("your choice is a " + vehicleType4(promptType, promptColor));
 
 
-// //5 consol.log with condition 
+ //5 consol.log with condition 
 
-// console.log(3 === 3 ? 'Yes' : 'No');
+ console.log(3 === 3 ? 'Yes' : 'No');
 
-// //6 vehicle Type and color function in secondhand shop (using prompts)
+//6 vehicle Type and color function in secondhand shop (using prompts)
 
-// function vehicleType6(type, color, age) {
+unction vehicleType6(type, color, age) {
 
-//   if (type == 1) { type = 'car'; }
-//   else { type = 'motorbike'; }
-//   if (age > 1) { age = age + ' years used'; }
-//   else { age = ' Brand New'; }
-//   let choice = color + " " + age + " " + type;
-//   return (choice)
-// }
+ if (type == 1) { type = 'car'; }
+  else { type = 'motorbike'; }
+  if (age > 1) { age = age + ' years used'; }
+  else { age = ' Brand New'; }
+let choice = color + " " + age + " " + type;
+  return (choice)
+ }
 
-// console.log("We found you a " + vehicleType6(1, "blue", 5));
-// //7 list vehicles
-// let vehicles = {
-//   vehicleTypeList: ["car", "motorbike", "caravan", "bike", "bus", "microbus", "tuktuk", "scooter"],
-// }
-// //8 get an element from array
+ console.log("We found you a " + vehicleType6(1, "blue", 5));
+ //7 list vehicles
+ let vehicles = {
+   vehicleTypeList: ["car", "motorbike", "caravan", "bike", "bus", "microbus", "tuktuk", "scooter"],
+ }
+ //8 get an element from array
 
-// console.log(vehicles.vehicleTypeList[2]);
+ console.log(vehicles.vehicleTypeList[2]);
 
-// //9. arrays of vehicles inside object
-// let vehicles2 = {
-//   vehicleTypeList: ["car", "motorbike", "caravan", "bike", "bus", "microbus", "tuktuk", "scooter"],
+ //9. arrays of vehicles inside object
+ let vehicles2 = {
+   vehicleTypeList: ["car", "motorbike", "caravan", "bike", "bus", "microbus", "tuktuk", "scooter"],
 
-// }
-// function vehicleType9(color, age, type) {
-//   if (age > 1) { age = age + ' years used'; }
-//   else { age = ' Brand New'; }
-//   let choice = color + " " + age + " " + type;
-//   return (choice)
-// }
+}
+ function vehicleType9(color, age, type) {
+   if (age > 1) { age = age + ' years used'; }
+  else { age = ' Brand New'; }
+   let choice = color + " " + age + " " + type;
+   return (choice)
+ }
 
-// console.log(vehicleType9("a " + "green", 1, vehicles2.vehicleTypeList[3]));
+ console.log(vehicleType9("a " + "green", 1, vehicles2.vehicleTypeList[3]));
 
 //10 Use the list of vehicles to write an advertisement.So that it prints something like: "Amazing Joe's Garage, we service cars, motorbikes, caravans and bikes."
 let vehicleTypeList = ["car", "motorbike", "caravan", "bike", "bus", "metro", "tuktuk"];
